@@ -1,0 +1,6 @@
+{
+    "data": {
+        "path": "<path-to-system-data-folder>/",
+        "db": "db.sqlite"
+    }
+}

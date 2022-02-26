@@ -1,0 +1,158 @@
+/* --- Utilitaire --- */
+
+th {
+    font-weight: bold;
+}
+
+.hide {
+    display: none;
+}
+
+tr.empty td {
+    text-align: center;
+}
+
+tr.error td {
+    text-align: center;
+}
+
+tr.loader td{
+    display: none;
+    text-align: center;
+}
+
+/* --- Pastille status --- */
+
+.status {
+    width: 25px;
+    height: 25px;
+    border-radius: 100px;
+    margin: auto;
+}
+
+.success {
+    background-color: #43a047;
+}
+
+.fail {
+    background-color: #e53935;
+}
+
+[data-tooltip]:focus:after, 
+[data-tooltip]:focus:before, 
+[data-tooltip]:hover:after, 
+[data-tooltip]:hover:before {
+    max-width: 275px;
+}
+
+/* --- Index --- */
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-radius: 0;
+}
+
+[data-theme="dark"] nav {
+    box-shadow: 0px 2px 4px black;
+    background-color: #11191f;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) nav {
+        box-shadow: 0px 2px 4px black;
+        background-color: #11191f;
+    }
+}
+
+[data-theme="light"] nav,
+:root:not([data-theme="dark"]) nav {
+    box-shadow: 0px 2px 4px #c4c4c4;
+    background-color: #FFF;
+}
+
+nav h1 {
+    padding-left: 2em;
+    font-size: 1.4em;
+}
+
+nav label[for="switch"] {
+    padding-right: 4em;
+}
+
+header {
+    margin-top: 2.6em;
+}
+
+.menu {
+    text-transform: capitalize;
+}
+
+#menu {
+    border: 2px solid;
+    border-radius: 80px;
+    padding: 1em;
+    text-align: center;
+}
+
+#menu span {
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#menu .selected {
+    text-decoration: underline;
+}
+
+[data-theme="dark"] #menu .selected {
+    color: #fdd835;
+}
+
+[data-theme="dark"] #menu div:not(.selected) span:hover {
+    color: #ffeb3b;
+}
+
+@media only screen and (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) #menu .selected {
+        color: #fdd835;
+    }
+
+    :root:not([data-theme="light"]) div:not(.selected) span:hover {
+        color: #ffeb3b;
+    }
+}
+
+[data-theme="light"] #menu .selected,
+:root:not([data-theme="dark"]) #menu .selected {
+    color: #ffb300;
+}
+
+[data-theme="light"] #menu div:not(.selected) span:hover,
+:root:not([data-theme="dark"]) #menu div:not(.selected) span:hover {
+    color: #ffa000;
+}
+
+main {
+    margin-top: -2em;
+}
+
+/* --- Overview --- */
+
+#ping-overview,
+#backup-overview {
+    cursor: pointer;
+}
+
+.overview {
+    margin-left: -4em;
+}
+
+.overview figure {
+    padding-left: 4em;
+}
+
+.overview h3 {
+    padding-left: 4em;
+    text-transform: capitalize;
+}
