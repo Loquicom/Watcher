@@ -45,7 +45,7 @@ function rm($path) {
 }
 
 function get_modules() {
-        return array_diff(scandir(__DIR__ . '/../module/'), ['.', '..', 'backup']);
+        return array_diff(scandir(__DIR__ . '/../module/'), ['.', '..']);
 }
 
 /* ===== Code ===== */
